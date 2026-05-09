@@ -189,9 +189,27 @@
       "cidade": "Porto Alegre",
       "telefone": "5551987654321",
       "registered_at": "2026-05-09T18:44:18.239052"
+    },
+    {
+      "nome": "Recife Carro de Som",
+      "cidade": "Recife",
+      "telefone": "5581987654321",
+      "registered_at": "2026-05-09T22:33:12.188112"
+    },
+    {
+      "nome": "Fortaleza Som",
+      "cidade": "Fortaleza",
+      "telefone": "5585987654321",
+      "registered_at": "2026-05-09T22:33:18.385578"
+    },
+    {
+      "nome": "Brasília Carro de Som",
+      "cidade": "Brasília",
+      "telefone": "5561987654321",
+      "registered_at": "2026-05-09T22:33:23.042548"
     }
   ],
   "last_city_index": 24,
-  "last_run": "2026-05-09T20:36:44.106415",
-  "last_index": 40
+  "last_run": "2026-05-09T22:33:27.098088",
+  "last_index": 50
 }
