@@ -1,0 +1,79 @@
+{
+  "scraped_cities": [
+    "Porto Alegre/RS",
+    "Caxias do Sul/RS",
+    "Canoas/RS",
+    "Pelotas/RS",
+    "Santa Maria/RS",
+    "Novo Hamburgo/RS",
+    "São Leopoldo/RS",
+    "Rio Grande/RS",
+    "Passo Fundo/RS",
+    "Bento Gonçalves/RS",
+    "São Paulo/SP",
+    "Campinas/SP",
+    "Santos/SP",
+    "São José dos Campos/SP",
+    "Sorocaba/SP",
+    "Ribeirão Preto/SP",
+    "São Bernardo do Campo/SP",
+    "Santo André/SP"
+  ],
+  "registered_companies": [
+    {
+      "name": "click here",
+      "email": "contato@click.carrodesomfacil.com.br",
+      "phone": "N/A",
+      "cidade": "São Leopoldo",
+      "uf": "RS",
+      "status": "pendente",
+      "registered_at": "2026-05-09T13:59:48.603214"
+    },
+    {
+      "name": "click here",
+      "email": "contato@click.carrodesomfacil.com.br",
+      "phone": "N/A",
+      "cidade": "Rio Grande",
+      "uf": "RS",
+      "status": "pendente",
+      "registered_at": "2026-05-09T13:59:49.151942"
+    },
+    {
+      "name": "click here",
+      "email": "contato@click.carrodesomfacil.com.br",
+      "phone": "N/A",
+      "cidade": "Passo Fundo",
+      "uf": "RS",
+      "status": "pendente",
+      "registered_at": "2026-05-09T13:59:49.697382"
+    },
+    {
+      "name": "Ribeirão Preto Carro de Som",
+      "email": "contato@ribeiro.carrodesomfacil.com.br",
+      "phone": "552189352509",
+      "cidade": "Ribeirão Preto",
+      "uf": "SP",
+      "status": "pendente",
+      "registered_at": "2026-05-09T14:00:51.411583"
+    },
+    {
+      "name": "São Bernardo do Campo Carro de Som",
+      "email": "contato@so.carrodesomfacil.com.br",
+      "phone": "552184131666",
+      "cidade": "São Bernardo do Campo",
+      "uf": "SP",
+      "status": "pendente",
+      "registered_at": "2026-05-09T14:00:53.153171"
+    },
+    {
+      "name": "Santo André Carro de Som",
+      "email": "contato@santo.carrodesomfacil.com.br",
+      "phone": "552191425824",
+      "cidade": "Santo André",
+      "uf": "SP",
+      "status": "pendente",
+      "registered_at": "2026-05-09T14:00:55.003453"
+    }
+  ],
+  "last_city_index": 18
+}
