@@ -135,13 +135,11 @@ def register_company(company):
     """Registra empresa via API"""
     try:
         data = {
-            'api_key': GELSON_API_KEY,
             'nome': company['nome'],
             'email': generate_email(company['nome']),
             'telefone': company['telefone'],
             'cidade': company['cidade'],
-            'fonte': 'gelson_database',
-            'password': generate_password()
+            'fonte': 'gelson_database'
         }
         
         logger.info(f"   Registrando: {company['nome'][:40]} - {company['cidade']}")
