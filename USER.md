@@ -5,7 +5,7 @@
 
 ## Contexto
 
-Sanntiago éCEO da Propaganda Cidade e criou a plataforma "Carro de Som Fácil" que conecta:
+Sanntiago é CEO da Propaganda Cidade e criou a plataforma "Carro de Som Fácil" que conecta:
 - Empresas de carro de som (cadastradas)
 - Clientes que buscam serviços por cidade
 - Sistema de commissionamento (10% para Propaganda Cidade)
