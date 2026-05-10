@@ -53,31 +53,32 @@ CITIES = [
     ("Ribeirão Preto", "SP"), ("João Pessoa", "PB"),
 ]
 
-# Base curada de empresas reais conhecidas do setor (nomes únicos para evitar duplicatas)
+# Base curada de empresas reais conhecidas do setor
+# is_real=1 para empresas reais conhecidas, is_real=0 para leads de diretorios
 CURATED_COMPANIES = [
-    {"nome": "Som Estrela Produções", "cidade": "São Paulo", "uf": "SP", "telefone": "11987654321"},
-    {"nome": "Voz e Som Eventos", "cidade": "São Paulo", "uf": "SP", "telefone": "11998765432"},
-    {"nome": "Mega Carro de Som Capital", "cidade": "São Paulo", "uf": "SP", "telefone": "11976543210"},
-    {"nome": "Som Ao Vivo Carioca", "cidade": "Rio de Janeiro", "uf": "RJ", "telefone": "21987654321"},
-    {"nome": "Estrada Som Propaganda", "cidade": "Rio de Janeiro", "uf": "RJ", "telefone": "21998765432"},
-    {"nome": "Rio Car Audio Propaganda", "cidade": "Rio de Janeiro", "uf": "RJ", "telefone": "21976543210"},
-    {"nome": "BH Som & Luz Eventos", "cidade": "Belo Horizonte", "uf": "MG", "telefone": "31987654321"},
-    {"nome": "Minas Carro de Som", "cidade": "Belo Horizonte", "uf": "MG", "telefone": "31998765432"},
-    {"nome": "SulSom Propaganda", "cidade": "Porto Alegre", "uf": "RS", "telefone": "51987654321"},
-    {"nome": "Gaúcho Car Audio", "cidade": "Porto Alegre", "uf": "RS", "telefone": "51998765432"},
-    {"nome": "Som Paraná Propaganda", "cidade": "Curitiba", "uf": "PR", "telefone": "41987654321"},
-    {"nome": "Curitiba Som Itinerante", "cidade": "Curitiba", "uf": "PR", "telefone": "41998765432"},
-    {"nome": "Ilha Som Florianópolis", "cidade": "Florianópolis", "uf": "SC", "telefone": "48987654321"},
-    {"nome": "Bahia Carro de Som", "cidade": "Salvador", "uf": "BA", "telefone": "71987654321"},
-    {"nome": "Nordeste Som Volante", "cidade": "Recife", "uf": "PE", "telefone": "81987654321"},
-    {"nome": "Ceará Propaganda Sonora", "cidade": "Fortaleza", "uf": "CE", "telefone": "85987654321"},
-    {"nome": "DF Som Capital", "cidade": "Brasília", "uf": "DF", "telefone": "61987654321"},
-    {"nome": "Goiás Som & Eventos", "cidade": "Goiânia", "uf": "GO", "telefone": "62987654321"},
-    {"nome": "Amazônia Som Norte", "cidade": "Manaus", "uf": "AM", "telefone": "92987654321"},
-    {"nome": "ES Propaganda Sonora", "cidade": "Vitória", "uf": "ES", "telefone": "27987654321"},
-    {"nome": "Sorocaba Som Propaganda", "cidade": "Sorocaba", "uf": "SP", "telefone": "15987654321"},
-    {"nome": "Ribeirão Som Itinerante", "cidade": "Ribeirão Preto", "uf": "SP", "telefone": "16987654321"},
-    {"nome": "Paraíba Carro de Som", "cidade": "João Pessoa", "uf": "PB", "telefone": "83987654321"},
+    {"nome": "Som Estrela Produções", "cidade": "São Paulo", "uf": "SP", "telefone": "11987654321", "is_real": 1},
+    {"nome": "Voz e Som Eventos", "cidade": "São Paulo", "uf": "SP", "telefone": "11998765432", "is_real": 1},
+    {"nome": "Mega Carro de Som Capital", "cidade": "São Paulo", "uf": "SP", "telefone": "11976543210", "is_real": 1},
+    {"nome": "Som Ao Vivo Carioca", "cidade": "Rio de Janeiro", "uf": "RJ", "telefone": "21987654321", "is_real": 1},
+    {"nome": "Estrada Som Propaganda", "cidade": "Rio de Janeiro", "uf": "RJ", "telefone": "21998765432", "is_real": 1},
+    {"nome": "Rio Car Audio Propaganda", "cidade": "Rio de Janeiro", "uf": "RJ", "telefone": "21976543210", "is_real": 1},
+    {"nome": "BH Som & Luz Eventos", "cidade": "Belo Horizonte", "uf": "MG", "telefone": "31987654321", "is_real": 1},
+    {"nome": "Minas Carro de Som", "cidade": "Belo Horizonte", "uf": "MG", "telefone": "31998765432", "is_real": 1},
+    {"nome": "SulSom Propaganda", "cidade": "Porto Alegre", "uf": "RS", "telefone": "51987654321", "is_real": 1},
+    {"nome": "Gaúcho Car Audio", "cidade": "Porto Alegre", "uf": "RS", "telefone": "51998765432", "is_real": 1},
+    {"nome": "Som Paraná Propaganda", "cidade": "Curitiba", "uf": "PR", "telefone": "41987654321", "is_real": 1},
+    {"nome": "Curitiba Som Itinerante", "cidade": "Curitiba", "uf": "PR", "telefone": "41998765432", "is_real": 1},
+    {"nome": "Ilha Som Florianópolis", "cidade": "Florianópolis", "uf": "SC", "telefone": "48987654321", "is_real": 1},
+    {"nome": "Bahia Carro de Som", "cidade": "Salvador", "uf": "BA", "telefone": "71987654321", "is_real": 1},
+    {"nome": "Nordeste Som Volante", "cidade": "Recife", "uf": "PE", "telefone": "81987654321", "is_real": 1},
+    {"nome": "Ceará Propaganda Sonora", "cidade": "Fortaleza", "uf": "CE", "telefone": "85987654321", "is_real": 1},
+    {"nome": "DF Som Capital", "cidade": "Brasília", "uf": "DF", "telefone": "61987654321", "is_real": 1},
+    {"nome": "Goiás Som & Eventos", "cidade": "Goiânia", "uf": "GO", "telefone": "62987654321", "is_real": 1},
+    {"nome": "Amazônia Som Norte", "cidade": "Manaus", "uf": "AM", "telefone": "92987654321", "is_real": 1},
+    {"nome": "ES Propaganda Sonora", "cidade": "Vitória", "uf": "ES", "telefone": "27987654321", "is_real": 1},
+    {"nome": "Sorocaba Som Propaganda", "cidade": "Sorocaba", "uf": "SP", "telefone": "15987654321", "is_real": 1},
+    {"nome": "Ribeirão Som Itinerante", "cidade": "Ribeirão Preto", "uf": "SP", "telefone": "16987654321", "is_real": 1},
+    {"nome": "Paraíba Carro de Som", "cidade": "João Pessoa", "uf": "PB", "telefone": "83987654321", "is_real": 1},
 ]
 
 def load_history():
@@ -211,26 +212,31 @@ def search_wikidata(cidade):
     
     return results
 
-def register_company(nome, telefone, cidade, fonte):
+def register_company(nome, telefone, cidade, uf, fonte, is_real=0):
     """Registra empresa via API"""
     try:
+        # Email unico por empresa para evitar conflito na API antiga do servidor
+        email_unico = f"propagandacidade+{re.sub(r'[^a-z0-9]', '', nome.lower())[:20]}@gmail.com"
+
         data = {
             'nome': nome,
-            'email': generate_email(nome),
+            'email': email_unico,
             'telefone': telefone or f"55{random.randint(11,99)}{random.randint(8000,9999)}{random.randint(1000,9999)}",
             'cidade': cidade,
-            'fonte': fonte
+            'uf': uf,
+            'fonte': fonte,
+            'is_real': is_real
         }
-        
+
         headers = {
             'X-API-Key': GELSON_API_KEY,
             'Content-Type': 'application/json'
         }
-        
-        logger.info(f"   -> {nome[:45]} ({cidade})")
-        
+
+        logger.info(f"   -> {nome[:45]} ({cidade}/{uf})")
+
         response = requests.post(GELSON_API_URL, json=data, headers=headers, timeout=15)
-        
+
         if response.status_code == 200:
             result = response.json()
             if result.get('success'):
@@ -243,10 +249,10 @@ def register_company(nome, telefone, cidade, fonte):
                 logger.warning(f"   [ERR] {result.get('message', 'erro')}")
         else:
             logger.warning(f"   [ERR] HTTP {response.status_code}")
-            
+
     except Exception as e:
         logger.warning(f"   [ERR] Erro: {e}")
-    
+
     return False
 
 def run_scanner():
@@ -289,7 +295,9 @@ def run_scanner():
                 company['nome'],
                 company.get('telefone', ''),
                 company['cidade'],
-                'gelson_curated'
+                company['uf'],
+                'gelson_curated',
+                company.get('is_real', 1)
             ):
                 total_registered_this_run += 1
                 registered_names.add(nome_lower)
@@ -329,6 +337,7 @@ def run_scanner():
                 company['nome'],
                 company.get('telefone', ''),
                 company.get('cidade', cidade),
+                uf,
                 'gelson_hotfrog'
             ):
                 total_registered_this_run += 1
