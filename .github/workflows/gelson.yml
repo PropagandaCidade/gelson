@@ -1,0 +1,91 @@
+name: Gelson Auto Scraper
+
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: 'Modo de cidades'
+        type: choice
+        options:
+          - '200' (200 maiores)
+          - 'capitais' (27 capitais)
+          - 'states' (por estado)
+          - 'custom' (personalizado)
+        default: '200'
+      states:
+        description: 'Estados (separados por vírgula, ex: SP,RJ,MG)'
+        type: string
+        required: false
+        default: ''
+      limit:
+        description: 'Quantidade de cidades'
+        type: number
+        default: 20
+      api_url:
+        description: 'URL da API (optional)'
+        type: string
+        required: false
+        default: ''
+      api_key:
+        description: 'API Key (optional)'
+        type: string
+        required: false
+        default: ''
+      telegram_token:
+        description: 'Telegram Bot Token (optional)'
+        type: string
+        required: false
+        default: ''
+      telegram_chat_id:
+        description: 'Telegram Chat ID (optional)'
+        type: string
+        required: false
+        default: ''
+  schedule:
+    - cron: '0 */6 * * *'  # A cada 6 horas
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          pip install requests playwright
+          playwright install chromium
+
+      - name: Run Gelson Auto
+        env:
+          GELSON_MODE: ${{ github.event.inputs.mode || '200' }}
+          GELSON_STATES: ${{ github.event.inputs.states || '' }}
+          GELSON_LIMIT: ${{ github.event.inputs.limit || 20 }}
+          GELSON_API_URL: ${{ github.event.inputs.api_url || '' }}
+          GELSON_API_KEY: ${{ github.event.inputs.api_key || '' }}
+          TELEGRAM_TOKEN: ${{ github.event.inputs.telegram_token || '' }}
+          TELEGRAM_CHAT_ID: ${{ github.event.inputs.telegram_chat_id || '' }}
+        run: |
+          python gelson_auto.py \
+            --mode "$GELSON_MODE" \
+            --states "$GELSON_STATES" \
+            --limit $GELSON_LIMIT \
+            --api-url "$GELSON_API_URL" \
+            --api-key "$GELSON_API_KEY" \
+            --telegram-token "$TELEGRAM_TOKEN" \
+            --telegram-chat-id "$TELEGRAM_CHAT_ID"
+
+      - name: Upload results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: gelson-results
+          path: results.json
+          retention-days: 7
